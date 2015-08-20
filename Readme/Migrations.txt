@@ -1,0 +1,16 @@
+command prompt (cmd.exe)
+cd c:\wamp\www\portal_app
+php artisan migrate --path=app/database/migrations/settings
+php artisan migrate --path=app/database/migrations/daily
+php artisan migrate --path=app/database/migrations/employee
+php artisan migrate --path=app/database/migrations/maintenance
+php artisan migrate --path=app/database/migrations/report
+php artisan migrate --path=app/database/migrations/tests
+php artisan migrate --path=app/database/migrations/resource
+
+
+Seed
+php artisan db:seed
+
+Reload Autoload classes
+composer dump
